@@ -4,6 +4,8 @@
 
 ## Welcome! 👋
 
+## <h3>Demo:<h3> <h4>[News Homepage](https://hilla10.github.io/news-homepage-main/)</h4>
+
 Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
