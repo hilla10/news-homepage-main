@@ -1,0 +1,46 @@
+.header {
+    padding: rem(89.6) 0 rem(54);
+
+    @include breakpointDown(mobile) {
+        padding: 28px 0;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: rem(66);
+
+            @include breakpointDown(mobile) {
+                width: rem(44);
+        }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: rem(33);
+            margin-right: 5px;
+
+            @include breakpointDown(mobile) {
+                display: none;
+            }
+
+            li {
+
+                a {
+                    font-size: 17px;
+                    color: $darkGrayishBlue;
+                    transition: color 0.3s ease-out;
+
+                    &:hover {
+                        color: $softRed;
+                    }
+                }
+            }
+        }
+    }
+}

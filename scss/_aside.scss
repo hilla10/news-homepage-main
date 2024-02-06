@@ -1,0 +1,42 @@
+.side {
+    background-color: #fff;
+
+    @include breakpointUP(mobile) {
+        display: none;
+    }
+
+    &__nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $offWhite;
+        width: rem(259);
+        height: 100%;
+        z-index: 99;
+        transform: translateX(100vh);
+        transition: all 0.5s ease-in-out;
+
+        ul {
+            margin: rem(130) rem(20);
+
+
+            li {
+                padding: rem(12) 0;
+
+                a {
+                    font-size: rem(18);
+                    color: $veryDarkBlue;
+                    transition: 0.3s ease-out;
+
+                    &:hover {
+                        color: $softOrange;
+                    }
+                }
+            }
+        }
+    }
+
+    &__nav.active {
+        transform: translateX(0);
+    }
+}

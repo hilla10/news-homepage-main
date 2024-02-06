@@ -1,0 +1,41 @@
+.hamburger {
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    right: 20px;
+    width: rem(42);
+    height: rem(20);
+    outline: none;
+    z-index: 100;
+
+    @include breakpointUP(mobile) {
+        display: none;
+    }
+
+    .bar {
+        background-color: $veryDarkBlue;
+        width: 100%;
+        height: 4px;
+        margin-bottom: 4px;
+        transition: all 0.5s ease-in-out;
+
+
+    }
+
+}
+
+.active {
+
+    .bar:first-child {
+        transform: rotate(132deg) translate(7px, -7px);
+    }
+
+    .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .bar:nth-child(3) {
+        transform: rotate(-131deg) translate(4px, 4px);
+    }
+
+}

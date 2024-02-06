@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: $offWhite;
+    line-height: 1.4;
+    font-size: rem(15);
+    transition: background 0.5s ease-in-out;
+
+    &.active {
+        background: $darkGrayishBlue;
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: rem(1116);
+    margin: 0 auto;
+
+    @include breakpointDown(tablet) {
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: rem(15) rem(31);
+    text-align: center;
+    background: $softRed;
+    color: $offWhite;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-top: rem(42);
+    transition: 0.3s ease-out;
+
+    &:hover {
+        background-color: $veryDarkBlue;
+    }
+}
+
+.footer {
+    background: $veryDarkBlue;
+    padding: rem(30);
+    margin-top: rem(50);
+    text-align: center;
+    color: #fff;
+    font-size: rem(16);
+
+    a {
+        color: $grayishBlue;
+        text-decoration: none;
+        transition: 0.3s ease-out;
+
+        &:hover {
+            color: $softOrange;
+        }
+    }
+}
